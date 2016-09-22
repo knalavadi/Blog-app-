@@ -26,7 +26,13 @@ var Comment = React.createClass({
         </h1>
         <small className="commentAuthor">
           by {this.props.author}
-        </small>        
+        </small>    
+
+        <div className="commentText">
+          {this.props.text}
+        </div>
+
+
         <span dangerouslySetInnerHTML={this.rawMarkup()} />
       </div>
     );
@@ -93,8 +99,8 @@ var CommentList = React.createClass({
   render: function() {
     var commentNodes = this.props.data.map(function(comment) {
       return (
-        <Comment title={comment.title} author={comment.author} key={comment.id}>
-        {comment.text}
+        <Comment title={comment.title} author={comment.author} text={comment.text} key={comment.id}>
+        .
           
         </Comment>
       );

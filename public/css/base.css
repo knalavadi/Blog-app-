@@ -61,5 +61,19 @@ ul {
 #blogger{
   color:#FFCC00 ;
   font-size: 2.7em;
+  margin-left: 2%;
 }
 
+.commentTitle{
+  margin-left: 2%;
+}
+
+.commentAuthor{
+
+  margin-left: 2%;
+}
+
+.commentText{
+    margin-top: 25px;
+    margin-left: 5%;
+}
