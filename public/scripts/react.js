@@ -10,6 +10,7 @@
  * WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
+// react 
 var Comment = React.createClass({
   rawMarkup: function() {
     var md = new Remarkable();
@@ -20,7 +21,7 @@ var Comment = React.createClass({
   // assigning class to title and author 
   render: function() {
     return (
-      <div className="comment">
+      <div className="comment" id="main-wrap">
         <h1 className="commentTitle">
           {this.props.title}
         </h1>

@@ -12,6 +12,7 @@
     <script src="https://unpkg.com/remarkable@1.6.2/dist/remarkable.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/jquery.js"></script>
 
   </head>
   <body>
@@ -20,7 +21,7 @@
 .sidenav {
     height: 100%;
     width: 0;
-    position: fixed;
+    position: absolute;
     z-index: 1;
     top: 0;
     left: 0;
@@ -60,38 +61,62 @@
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
+
+#mainImage{
+  z-index: -1;
+  opacity: .9;
+  top:0;
+}
+
 </style>
 <body>
+<meta charset="utf-8">
 
 
+<div id="main" style="font-size:25px;cursor:pointer" onclick="openNav()">&#9776; learn more</div>
+<h1 id ="header"></h1>
 
-<div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a >About</a>
-  <a href="#">Blogger is a react based blog app where users can submit blog posts directly and have it displayed immediately</a>
+        <!-- side bar  -->
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a >About</a>
+          <a href="#">Blogger is a react based blog app where users can submit blog posts directly and have it displayed immediately</a>
 
-  <a href="https://github.com/knalavadi/Blog-app-">Github</a>
-</div>
+          <a href="https://github.com/knalavadi/Blog-app-">Github</a>
+        </div>
 
-<div id="main">
+ 
+<!-- end sidebar  -->
 
-  <span style="font-size:25px;cursor:pointer" onclick="openNav()">&#9776; learn more</span>
-</div>
+<!-- <script>
+var canvas = document.querySelector("#mainImage"),
+context = canvas.getContext('2d');
 
-<script>
-function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-    document.getElementById("main").style.marginLeft = "250px";
+make_base();
+
+function make_base()
+{
+  base_image = new Image();
+  base_image.src = 'static/blogCoffee.png';
+  base_image.onload = function(){
+    context.drawImage(base_image, 1, 1);
+  }
 }
+</script> -->
 
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-    document.getElementById("main").style.marginLeft= "0";
-}
-</script>
+
+
+
+
+
+
+
+
+
 
     <div id="content"></div>
-    <script type="text/babel" src="scripts/example.js"></script>
+    <script type="text/babel" src="scripts/react.js"></script>
+    <script type="text/babel" src="scripts/main.js"></script>
     <script type="text/babel">
 
     </script>
