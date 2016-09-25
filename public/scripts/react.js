@@ -138,29 +138,43 @@ var CommentForm = React.createClass({
     this.props.onCommentSubmit({title: title, author: author, text: text});
     this.setState({title: '', author: '', text: ''});
   },
+
   render: function() {
     return (
-      <form className="commentForm" onSubmit={this.handleSubmit}>
-        <input
-          type="text"
-          placeholder="Title"
-          value={this.state.title}
-          onChange={this.handleTitleChange}
-        />      
-        <input
-          type="text"
-          placeholder="Your name"
-          value={this.state.author}
-          onChange={this.handleAuthorChange}
-        />
-        <input
-          type="text"
-          placeholder="Say something..."
-          value={this.state.text}
-          onChange={this.handleTextChange}
-        />
-        <input type="submit" value="Post" />
-      </form>
+    <div className="container"
+      style={{backgroundColor: '#d3d3d3' }} >
+    <div className="jumbotron">
+    <h3 
+    style={{marginLeft: 2 + '%', color: '#FFFFFF'}} 
+    > have something to add?
+        <form className="commentForm" onSubmit={this.handleSubmit}>
+          <input 
+            style={{width: 100 + 'px', marginLeft: 5 + '%'}} 
+            type="text"
+            placeholder="Title"
+            value={this.state.title}
+            onChange={this.handleTitleChange}
+          />      
+          <input
+            style={{width: 200 + 'px', marginRight: 70 + '%', marginBottom: 2 + "%"}}
+            type="text"
+            placeholder="Your name"
+            value={this.state.author}
+            onChange={this.handleAuthorChange}
+          />
+          <textarea
+            style={{width: 80 + '%', height: 300 + 'px', marginLeft: 5 + '%'}} 
+            type="text"
+            placeholder="Say something..."
+            value={this.state.text}
+            onChange={this.handleTextChange}
+          />
+          <input type="submit" value="Post"
+            style={{backgroundColor: '#FFFFFF', color: '#FFCC00', fontWeight: 'bold', width: 50 + 'px', height: 30 + 'px', marginLeft: 2 + '%', marginBottom: 2 + '%'}} />
+        </form>
+    </h3>
+    </div>
+    </div>
     );
   }
 });

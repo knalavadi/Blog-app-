@@ -39,7 +39,7 @@ function closeNav() {
 
     function initHeader() {
         width = "100px";
-        height = "100px";
+        height = "300px";
         target = {x: 0, y: height};
 
         animationHeader = document.getElementById('header');
@@ -48,8 +48,7 @@ function closeNav() {
 
     // Event handlers
     function addListeners() {
-        window.addEventListener('scroll', scrollCheck);
-        window.addEventListener('resize', resize);
+
     }
 
     function scrollCheck() {
@@ -57,13 +56,7 @@ function closeNav() {
         else animateHeader = true;
     }
 
-    function resize() {
-        width = "100px";
-        height = "100px";
-        animationHeader.style.width = width+'px';
-        canvas.width = width;
-        canvas.height = height;
-    }
+
 
     function animate() {
         if(animateHeader) {

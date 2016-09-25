@@ -17,7 +17,16 @@
   </head>
   <body>
 
+
 <style>
+#header{
+    background-image: url("static/keyboard.png");
+    margin-left: 2%;
+    margin-right: 2%;
+    width:96%;
+    max-height: 400px;
+    opacity: 2;
+}
 .sidenav {
     height: 100%;
     width: 0;
@@ -66,6 +75,7 @@
   z-index: -1;
   opacity: .9;
   top:0;
+
 }
 
 </style>
@@ -73,8 +83,10 @@
 <meta charset="utf-8">
 
 
-<div id="main" style="font-size:25px;cursor:pointer" onclick="openNav()">&#9776; learn more</div>
-<h1 id ="header"></h1>
+<!-- header picture which animated overlay -->
+<div id ="header">
+<div id="main" style="font-size:25px;cursor:pointer;color:white;" onclick="openNav()">&#9776; learn more</div>
+</div>
 
         <!-- side bar  -->
         <div id="mySidenav" class="sidenav">
