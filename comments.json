@@ -1,8 +1,14 @@
 [
     {
         "text": "this is the first blog post",
-        "title": "hello world!",
+        "author": "krisha",
         "id": 1474499274470,
-        "author": "krisha"
+        "title": "hello world!"
+    },
+    {
+        "text": "hello! this is the second blog post :)",
+        "author": "krisha",
+        "id": 1474930755381,
+        "title": "blog post two"
     }
 ]
