@@ -3,7 +3,7 @@
 this a react based blog app, built for fun. 
 
 
-![demo](/static/demo.gif?raw=true "demo")
+![demo](/public/static/demo.gif?raw=true "demo")
 
 
 
