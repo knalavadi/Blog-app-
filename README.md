@@ -4,7 +4,7 @@ this a react based blog app, built for fun.
 
 
 
-![demo](/demo.gif?raw=true "demo")
+![demo](public/static/demo.gif?raw=true "demo")
 
 
 ##Notes
